@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$("img").unveil();
    
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#header', offset: 100});
