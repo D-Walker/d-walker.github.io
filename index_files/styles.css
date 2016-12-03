@@ -372,7 +372,7 @@ label {
 /* ======= Hero Section ======= */
 .hero-section {
   margin-top: 55px;
-  background: #262220 url('./hero-bg.jpg') no-repeat 50% top;
+  background: #262220 url('./hero-bg.webp') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -548,7 +548,7 @@ label {
 }
 /* ======= Story Section ======= */
 .story-section {
-  background: #413a38 url('./story-bg.jpg') no-repeat 50% top;
+  background: #413a38 url('./story-bg.webp') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
