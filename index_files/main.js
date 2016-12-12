@@ -1,3 +1,12 @@
+function openMap(ll) {
+	if (isMobile.apple.device) {
+		window.open('maps://?q=' + ll, '_system');
+	}
+	else if(isMobile.android.device){
+		window.open('geo:0,0?q=' + ll, '_system');
+	}
+}
+
 $(document).ready(function() {
    // 百度地图API功能
 	var map = new BMap.Map("dituContent");	// 创建Map实例
