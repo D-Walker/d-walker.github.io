@@ -327,40 +327,6 @@ share our day. However if you do can not come with us. It will be glad to see yo
     
     <script type="text/javascript" src="index_files/main.js"></script>
     
-    <script type="text/javascript">
-	// 百度地图API功能
-	var map = new BMap.Map("dituContent");	// 创建Map实例
-	map.centerAndZoom(new BMap.Point(113.40531, 22.519967), 14);	 // 创建点坐标
-	var marker1 = new BMap.Marker(new BMap.Point(113.365749, 22.528505));  // 创建标注
-	var marker2 = new BMap.Marker(new BMap.Point(113.434758, 22.515708));  // 创建标注
-	map.addOverlay(marker1);              // 将标注添加到地图中
-	map.addOverlay(marker2);
-	
-	//创建信息窗口
-	var infoWindow1 = new BMap.InfoWindow("<div style='overflow: auto;'><h4 class='map-title script'>Chrismas feasting</h4><div class='address'><span class='region'>西区富华道16号富业广场3楼荣光国宴（富洲酒店对面）</span><br><span class='postal-code'>508400</span><br><span class='city-name'>广东省中山市</span></div></div>");
-	var infoWindow2 = new BMap.InfoWindow("<div style='overflow: auto;'><h4 class='map-title script'>Wedding day</h4><div class='address'><span class='region'>东区大鳌溪新村三街14号</span><br><span class='postal-code'>508400</span><br><span class='city-name'>广东省中山市</span></div></div>");
-	marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
-	marker2.addEventListener("click", function(){this.openInfoWindow(infoWindow2);});
-	marker2.openInfoWindow(infoWindow2);
-	
-	var i = 0;
-	var j = 0;
-	var id = setInterval(function() {
-		if (i == 0) {
-			marker1.openInfoWindow(infoWindow1);
-			i = 1;
-		}
-		else {
-			marker2.openInfoWindow(infoWindow2);
-			i = 0;
-		}
-		j++;
-		if (j >= 10) clearInterval(id);
-	}, 5000)
-	
-	//39b92e64ae5622663ceceaccd8ab8eb1
-	//oCL7n7ncO6jNUf5MoiYjsjCaGiQeR1VK
-	</script>
 	<script type="text/javascript">
 		function openMap(ll) {
 			if (isMobile.apple.device) {
