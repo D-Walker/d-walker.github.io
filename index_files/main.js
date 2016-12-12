@@ -8,6 +8,8 @@ function openMap(ll) {
 }
 
 $(document).ready(function() {
+	$("img").unveil();
+
    // 百度地图API功能
 	var map = new BMap.Map("dituContent");	// 创建Map实例
 	map.centerAndZoom(new BMap.Point(113.40531, 22.519967), 14);	 // 创建点坐标
