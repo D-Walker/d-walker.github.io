@@ -26,8 +26,7 @@ $(document).ready(function() {
 	marker2.openInfoWindow(infoWindow2);
 	
 	var i = 0;
-	var j = 0;
-	var id = setInterval(function() {
+	setInterval(function() {
 		if (i == 0) {
 			marker1.openInfoWindow(infoWindow1);
 			i = 1;
@@ -36,8 +35,6 @@ $(document).ready(function() {
 			marker2.openInfoWindow(infoWindow2);
 			i = 0;
 		}
-		j++;
-		if (j >= 10) clearInterval(id);
 	}, 5000)
 	
 	//39b92e64ae5622663ceceaccd8ab8eb1
